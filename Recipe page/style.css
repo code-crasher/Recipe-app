@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+:root{
+--clr-primary-400: hsl(14, 45%, 36%);
+--clr-primary-200: hsl(332, 51%, 32%);
+
+--clr-neutral-100: hsl(0, 0%, 100%);
+--clr-neutral-200: hsl(330, 100%, 98%);
+--clr-secondary-100: hsl(30, 54%, 90%);
+--clr-secondary-200: hsl(30, 18%, 87%);
+--clr-secondary-300: hsl(30, 10%, 34%);
+--clr-secondary-400: hsl(24, 5%, 18%);
+
+--fw-400: 400;
+--fw-600:600;
+--fw-700:700;
+
+--ff-base:"Outfit";
+--ff-heading:"Young Serif";
+
+}
+
+*,
+*::after,
+*::before{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+img{
+	display:block;
+	max-width:100%;
+}
+h1,
+h2,
+p,
+ul,
+ol{
+	margin:0;
+	padding: 0;
+}
+.display-1{
+	font-size:3rem;
+	font-weight: var(--fw-700)
+}
+
+.display-2{
+	font-size:2rem;
+	font-weight: var(--fw-700)
+}
+.bg-accent{
+	background-color:var(--clr-secondary-100);
+}
+.text-primary{
+	color:var(--clr-primary-400);
+}
+.text-accent{
+	color:var(--clr-primary-200);
+}
+body{
+	font-family:var(--ff-base),san-serif;
+	font-size: 1rem;
+	font-weight: var(--fw-400);
+	overflow-x: hidden;
+	background:var(--clr-secondary-100);
+}
+h1,
+h2{
+font-family:var(--ff-heading);
+}
+main{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	width:100vw;
+}
+section{
+	margin-bottom:1rem;
+}
+.recipe-card{
+	max-width:600px;
+	background:var(--clr-neutral-200);
+	padding:1em;
+	margin-block:1rem;
+	border-radius:6px;
+}
+img{
+	border-radius: 6px;
+}
+h1{
+  margin-block:1rem;	
+}
+h2{
+	margin-bottom: 1rem;
+}
+.section__container{
+	padding:2em;
+}
+ul,
+ol{
+	list-style-position: inside;
+}
+ol{
+	list-style: none;
+	counter-reset:count;
+}
+ol li{
+	counter-increment: count;
+	margin-left:1.5rem;
+	margin-block:1rem;
+	font-size: inherit;
+	font-weight: inherit;
+}
+ol li strong{
+	color:var(--clr-secondary-400);
+}
+ol li:before{
+	content:counter(count)'.';
+	color:var(--clr-primary-400);
+	font-weight: bold;
+	margin-left:-1.5rem;
+	margin-right:.75rem;
+}
+table{
+	table-layout: fixed;
+	width:100%;
+	border-collapse: collapse;
+	margin-top: 1rem;
+}
+tbody tr:nth-child(1),
+tbody tr:nth-child(2),
+tbody tr:nth-child(3){
+	border-bottom:solid 2px var(--clr-secondary-200);
+}
+td{
+	padding-block:1em;
+}
+td:first-child{
+	padding-left:2em;
+}
+td:last-child{
+	color:var(--clr-primary-400);
+	font-weight:var(--fw-600);
+}
+.attribution { 
+	font-size: 11px;
+    text-align: center;
+}
+.attribution a{
+  color: hsl(228, 45%, 44%);
+ }
